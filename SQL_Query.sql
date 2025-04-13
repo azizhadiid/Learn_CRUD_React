@@ -10,3 +10,6 @@ CREATE TABLE `test_crud`.`books` (
 );
 
 INSERT INTO `test_crud`.`books` (`id`, `title`, `desc`, `cover`) VALUES ('1', 'test title', 'desc', 'cover.png');
+
+ALTER TABLE `test_crud`.`books`
+ADD COLUMN `price` INT NOT NULL AFTER `cover`;
